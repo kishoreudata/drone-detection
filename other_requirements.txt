@@ -1,2 +1,4 @@
-python 3.6.4
+code works on python 3.6.4 only, not on 3.7 or above
+install numpy
+install pip requirements r
 imutils

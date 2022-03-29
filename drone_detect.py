@@ -7,12 +7,14 @@ c = Core()
 
 cap = cv2.VideoCapture(0)
 c.set_model(c.get_model())
+path = r'C:\Users\Rajnish\Desktop\geeksforgeeks.png'
 while (True):
     ret, frame =cap.read()
     #image = c.load_image_by_path(frame)
     #drawing_image = c.get_drawing_image(image)
     #image1 = frame.copy()
     image1 = frame
+    #image1 = cv2.imread(path)
     image = cv2.cvtColor(image1, cv2.COLOR_BGR2RGB)
 
     processed_image, scale = c.pre_process_image(image)
